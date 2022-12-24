@@ -1,10 +1,5 @@
 pipeline{
 agent any
 stages{
-  stage ('stage-print-first-message')
-  {steps {sh 'echo job is building'}}
-  
-   stage ('stage-print-second message')
-   {steps {sh 'echo packing is deploying'}}
-}
-}
+  stage ('SCM checkout')
+  {steps {sh 'git branch: 'master', url: 'https://github.com/Prajakta6git/Jenkinsfile.git'}}
