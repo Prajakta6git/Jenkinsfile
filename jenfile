@@ -2,6 +2,6 @@ pipeline {
 agent any
 stages {
   stage ('SCM checkout')
-  {steps {git branch: 'main', url: 'https://github.com/Prajakta6git/Jenkinsfile.git'}
+  {steps {git branch: 'main', url: 'https://github.com/Prajakta6git/Jenkinsfile.git/'}}
   }
   }
